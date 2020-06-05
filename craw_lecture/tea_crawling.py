@@ -17,7 +17,7 @@ for _ in range(3):
     time.sleep(2)
 
 
-soup = bs(driver.source_page, 'html.parser')
+soup = bs(driver.page_source, 'html.parser')
 
 name_list = []
 name_tag_list = soup.select("h4.h.fz_03")
